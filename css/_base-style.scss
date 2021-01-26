@@ -10,15 +10,44 @@ body {
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    line-height: 1;
+    line-height: 1.5;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: var(--color-Grayish-Blue);
+    background-color: var(--color-Light-Gray);
 }
 
 ul, li{
     list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-Dark-Blue);
+}
+
 img {
     max-width: 100%;
+    height: auto;
     display: block;
+}
+
+main{
+    padding: 5.75rem 2rem;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+.heading--light{
+    font-weight: 200;
+}
+
+p{
+    font-size: .93em;
+    margin: var(--main-margin) 0;
+}
+
+li{
+    margin-bottom: 1.5rem;
 }

@@ -1,3 +1,15 @@
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-Dark-Blue: hsl(234, 12%, 34%);
+  --color-Grayish-Blue: hsl(229, 6%, 66%);
+  --color-Light-Gray: hsl(0, 0%, 98%);
+  --color-light: hsl(0, 0%, 100%);
+  --main-margin: 1em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +24,83 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1;
+  line-height: 1.5;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: var(--color-Grayish-Blue);
+  background-color: var(--color-Light-Gray);
 }
 
 ul, li {
   list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-Dark-Blue);
+}
+
 img {
   max-width: 100%;
+  height: auto;
   display: block;
+}
+
+main {
+  padding: 5.75rem 2rem;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.heading--light {
+  font-weight: 200;
+}
+
+p {
+  font-size: .93em;
+  margin: var(--main-margin) 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  text-align: left;
+  padding: 1.87rem;
+  border-radius: .5rem;
+  background-color: var(--color-light);
+  -webkit-box-shadow: 0 1rem 1.8rem -.5rem lightgray;
+          box-shadow: 0 1rem 1.8rem -.5rem lightgray;
+}
+
+.card p {
+  font-size: .76rem;
+}
+
+.card img {
+  width: 3.6rem;
+  margin: 1.5rem 0 auto auto;
+}
+
+.card--flair-cyan {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, var(--color-cyan)), color-stop(1%, var(--color-light)));
+  background-image: linear-gradient(var(--color-cyan) 2%, var(--color-light) 1%);
+}
+
+.card--flair-red {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, var(--color-red)), color-stop(1%, var(--color-light)));
+  background-image: linear-gradient(var(--color-red) 2%, var(--color-light) 1%);
+}
+
+.card--flair-orange {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, var(--color-orange)), color-stop(1%, var(--color-light)));
+  background-image: linear-gradient(var(--color-orange) 2%, var(--color-light) 1%);
+}
+
+.card--flair-blue {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, var(--color-blue)), color-stop(1%, var(--color-light)));
+  background-image: linear-gradient(var(--color-blue) 2%, var(--color-light) 1%);
 }
 /*# sourceMappingURL=styles.css.map */

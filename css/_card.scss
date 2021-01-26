@@ -1,0 +1,33 @@
+.card{
+
+    // width: 312px;
+    text-align: left;
+    padding: 1.87rem;
+
+    border-radius: .5rem;
+    background-color: var(--color-light);
+    box-shadow: 0 1rem 1.8rem -.5rem lightgray;
+
+    p{
+        font-size: .76rem;
+    }
+
+    img{
+        width: 3.6rem;
+        margin: 1.5rem 0 auto auto;
+    }
+
+}
+
+.card--flair-cyan{
+    background-image: linear-gradient(var(--color-cyan) 2%, var(--color-light) 1%);
+}
+.card--flair-red{
+    background-image: linear-gradient(var(--color-red) 2%, var(--color-light) 1%);
+}
+.card--flair-orange{
+    background-image: linear-gradient(var(--color-orange) 2%, var(--color-light) 1%);
+}
+.card--flair-blue{
+    background-image: linear-gradient(var(--color-blue) 2%, var(--color-light) 1%);
+}
