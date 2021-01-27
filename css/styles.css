@@ -60,7 +60,8 @@ h1 {
 
 p {
   font-size: .93em;
-  margin: var(--main-margin) 0;
+  max-width: 54ch;
+  margin: var(--main-margin) auto;
 }
 
 ul {
@@ -118,5 +119,27 @@ li {
 .card--flair-blue {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, var(--color-blue)), color-stop(1%, var(--color-light)));
   background-image: linear-gradient(var(--color-blue) 2%, var(--color-light) 1%);
+}
+
+@media (min-width: 790px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .ul-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .ul-grid :nth-child(1), .ul-grid :nth-child(2) {
+    place-self: start;
+  }
+  .ul-grid :nth-child(3), .ul-grid :nth-child(4) {
+    place-self: end;
+  }
+  li {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

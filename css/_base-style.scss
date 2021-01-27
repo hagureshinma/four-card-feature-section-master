@@ -46,7 +46,8 @@ h1{
 
 p{
     font-size: .93em;
-    margin: var(--main-margin) 0;
+    max-width: 54ch;
+    margin: var(--main-margin) auto;
 }
 
 ul{
