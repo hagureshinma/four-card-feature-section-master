@@ -32,7 +32,8 @@ img {
 }
 
 main{
-    padding: 5.75rem 2rem;
+    padding: 5.75rem 2rem 0;
+    max-width: 69.375rem;
 }
 
 h1{
@@ -48,6 +49,21 @@ p{
     margin: var(--main-margin) 0;
 }
 
+ul{
+    margin-top: 5rem;
+}
+
 li{
+    // max-width: 22rem;
+    max-width: 20rem;
+    margin: auto;
     margin-bottom: 1.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+    color: var(--color-cyan);
+  }
 }
