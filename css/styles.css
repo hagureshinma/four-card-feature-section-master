@@ -48,6 +48,7 @@ img {
 main {
   padding: 5.75rem 2rem 0;
   max-width: 69.375rem;
+  margin: auto;
 }
 
 h1 {
@@ -72,6 +73,10 @@ li {
   max-width: 20rem;
   margin: auto;
   margin-bottom: 1.5rem;
+}
+
+footer {
+  margin: auto;
 }
 
 .attribution {
@@ -119,6 +124,55 @@ li {
 .card--flair-blue {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, var(--color-blue)), color-stop(1%, var(--color-light)));
   background-image: linear-gradient(var(--color-blue) 2%, var(--color-light) 1%);
+}
+
+.card h3 {
+  -webkit-transition: color 250ms ease;
+  transition: color 250ms ease;
+}
+
+.card--flair-cyan:hover,
+.card--flair-cyan:focus {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, var(--color-cyan)), color-stop(30%, var(--color-light)));
+  background-image: linear-gradient(var(--color-cyan) 30%, var(--color-light) 30%);
+}
+
+.card--flair-cyan:hover h3,
+.card--flair-cyan:focus h3 {
+  color: var(--color-light);
+}
+
+.card--flair-orange:hover,
+.card--flair-orange:focus {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, var(--color-orange)), color-stop(30%, var(--color-light)));
+  background-image: linear-gradient(var(--color-orange) 30%, var(--color-light) 30%);
+}
+
+.card--flair-orange:hover h3,
+.card--flair-orange:focus h3 {
+  color: var(--color-light);
+}
+
+.card--flair-red:hover,
+.card--flair-red:focus {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, var(--color-red)), color-stop(30%, var(--color-light)));
+  background-image: linear-gradient(var(--color-red) 30%, var(--color-light) 30%);
+}
+
+.card--flair-red:hover h3,
+.card--flair-red:focus h3 {
+  color: var(--color-light);
+}
+
+.card--flair-blue:hover,
+.card--flair-blue:focus {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, var(--color-blue)), color-stop(30%, var(--color-light)));
+  background-image: linear-gradient(var(--color-blue) 30%, var(--color-light) 30%);
+}
+
+.card--flair-blue:hover h3,
+.card--flair-blue:focus h3 {
+  color: var(--color-light);
 }
 
 @media (min-width: 790px) {
