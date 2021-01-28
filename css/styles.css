@@ -130,6 +130,8 @@ li {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    max-width: 49.375rem;
+    margin-left: auto;
   }
   .ul-grid :nth-child(1), .ul-grid :nth-child(2) {
     place-self: start;
@@ -140,6 +142,43 @@ li {
   li {
     margin-left: initial;
     margin-right: initial;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ul-grid {
+    max-width: 100%;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+  }
+  .ul-grid li {
+    place-self: center !important;
+  }
+  .li--grid-position1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: 2 / 1 / 4 / 1;
+  }
+  .li--grid-position2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: 1 / 2 / 3 / 2;
+  }
+  .li--grid-position3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-area: 3 / 2 / 6 / 2;
+  }
+  .li--grid-position4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: 2 / 3 / 4 / 3;
   }
 }
 /*# sourceMappingURL=styles.css.map */

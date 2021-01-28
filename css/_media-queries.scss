@@ -6,6 +6,8 @@
     .ul-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 49.375rem;
+        margin-left: auto;
 
         & :nth-child(1), :nth-child(2){
             // justify-self: start;
@@ -22,4 +24,34 @@
         margin-left: initial;
         margin-right: initial;
     }
+}
+
+@media (min-width: 1000px){
+
+    .ul-grid{
+        max-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, auto);
+
+        & li{
+            place-self: center !important;
+        }
+    }
+
+    .li--grid-position1{
+        grid-area: 2 / 1 / 4 / 1;
+    }
+
+    .li--grid-position2{
+        grid-area: 1 / 2 / 3 / 2;
+    }
+    
+    .li--grid-position3{
+        grid-area: 3 / 2 / 6 / 2;
+    }
+
+    .li--grid-position4{
+        grid-area: 2 / 3 / 4 / 3;
+    }
+
 }
