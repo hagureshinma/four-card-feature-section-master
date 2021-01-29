@@ -31,14 +31,18 @@ img {
     display: block;
 }
 
-main{
-    padding: 5.75rem 2rem 0;
-    max-width: 69.375rem;
-    margin: auto;
+header{
+    padding-top: 5.75rem;
 }
 
-h1{
+h1, h2{
     font-size: 1.5em;
+}
+
+main{
+    padding: 0 2rem;
+    max-width: 69.375rem;
+    margin: auto;
 }
 
 .heading--light{
