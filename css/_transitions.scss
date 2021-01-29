@@ -1,49 +1,21 @@
 .card {
+  
+  background-size: 100% 200%;
+  background-position-y: -7.9rem;
+
+  transition: background-position-y 250ms ease;
+
   h3 {
     transition: color 250ms ease;
   }
 }
 
-.card--flair-cyan:hover,
-.card--flair-cyan:focus {
-  h3 {
-    color: var(--color-light);
-  }
-  background-image: linear-gradient(
-    var(--color-cyan) 30%,
-    var(--color-light) 30%
-  );
-}
+.card:hover,
+.card:focus {
 
-.card--flair-orange:hover,
-.card--flair-orange:focus {
+  background-position-y: -4rem;
   h3 {
     color: var(--color-light);
   }
-  background-image: linear-gradient(
-    var(--color-orange) 30%,
-    var(--color-light) 30%
-  );
-}
-
-.card--flair-red:hover,
-.card--flair-red:focus {
-  h3 {
-    color: var(--color-light);
-  }
-  background-image: linear-gradient(
-    var(--color-red) 30%,
-    var(--color-light) 30%
-  );
-}
-
-.card--flair-blue:hover,
-.card--flair-blue:focus {
-  h3 {
-    color: var(--color-light);
-  }
-  background-image: linear-gradient(
-    var(--color-blue) 30%,
-    var(--color-light) 30%
-  );
+ 
 }
